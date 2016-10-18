@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>{% block title %}Welcome!{% endblock %}</title>
+        <link rel="stylesheet" href="/css/style.css" media="screen" title="no title">
+        <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
+    </head>
+    <body>
+        {% block body %}
+          <h1>Datos de la tabla:</h1>
+
+
+
+<table border="1px" id="datos">
+
+
+      <tr>
+
+            {% for dato in datos %}
+
+                <td id="tdTop" class="o">{{ dato.nombre }}</td>
+
+            {% endfor %}
+      </tr>
+      <tr>
+            {% for dato in datos %}
+
+                <td class="c">{{ dato.direccion }}</td>
+
+            {% endfor %}
+      </tr>
+      <tr>
+            {% for dato in datos %}
+
+                <td class="o">{{ dato.cp }}</td>
+
+            {% endfor %}
+      </tr>
+      <tr>
+            {% for dato in datos %}
+
+                <td class="c">{{ dato.telefono1 }}</td>
+
+            {% endfor %}
+      </tr>
+      <tr>
+            {% for dato in datos %}
+
+                <td class="o">{{ dato.telefono2 }}</td>
+
+            {% endfor %}
+      </tr>
+
+      <tr>
+            {% for dato in datos %}
+
+                <td id="tdBottom" class="c">{{ dato.fechaCreacion }}</td>
+
+            {% endfor %}
+      </tr>
+        {% endblock %}
+</td>
+</table>
+    </body>
+</html>

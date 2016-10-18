@@ -1,0 +1,31 @@
+#datos{
+  margin: 0 auto;
+  border-radius: 5px 5px 5px 5px;
+}
+
+#tdTop{
+  border-radius: 5px 5px 0 0;
+}
+
+#tdBottom{
+  border-radius: 0 0 5px 5px;
+}
+
+table{
+  background-color: #333
+}
+
+tr{
+  color: #f7f7f7;
+  text-align: center;
+  height: 60px;
+
+}
+
+.o{
+  background-color: #ff1a1a;
+}
+
+.c{
+  background-color: #ff4d4d;
+}
