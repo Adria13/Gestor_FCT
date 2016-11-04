@@ -17,51 +17,28 @@
 
 
       <tr>
+          <td>Nombre</td>
+          <td>Dirección</td>
+          <td>Código Postal</td>
+          <td>Teléfono 1</td>
+          <td>Teléfono 2</td>
+          <td>Fecha de creación</td>
+      </tr>
+
 
             {% for dato in datos %}
-
+            <tr>
                 <td id="tdTop" class="o">{{ dato.nombre }}</td>
-
-            {% endfor %}
-      </tr>
-      <tr>
-            {% for dato in datos %}
-
                 <td class="c">{{ dato.direccion }}</td>
-
-            {% endfor %}
-      </tr>
-      <tr>
-            {% for dato in datos %}
-
                 <td class="o">{{ dato.cp }}</td>
-
-            {% endfor %}
-      </tr>
-      <tr>
-            {% for dato in datos %}
-
                 <td class="c">{{ dato.telefono1 }}</td>
-
-            {% endfor %}
-      </tr>
-      <tr>
-            {% for dato in datos %}
-
                 <td class="o">{{ dato.telefono2 }}</td>
-
-            {% endfor %}
-      </tr>
-
-      <tr>
-            {% for dato in datos %}
-
                 <td id="tdBottom" class="c">{{ dato.fechaCreacion }}</td>
-
+            </tr>
             {% endfor %}
-      </tr>
-        {% endblock %}
-</td>
+
+
 </table>
+  {% endblock %}
     </body>
 </html>

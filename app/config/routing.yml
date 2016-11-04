@@ -1,6 +1,6 @@
 gestor:
     resource: "@gestorBundle/Resources/config/routing.yml"
-    prefix:   /gestor
+    prefix:   /
 
 app:
     resource: "@AppBundle/Controller/"
