@@ -1,3 +1,5 @@
+/*Tabla*/
+
 #datos{
   margin: 0 auto;
   border-radius: 5px 5px 5px 5px;
@@ -19,7 +21,6 @@ tr{
   color: #f7f7f7;
   text-align: center;
   height: 60px;
-
 }
 
 .o{
@@ -28,4 +29,18 @@ tr{
 
 .c{
   background-color: #ff4d4d;
+}
+
+
+/*Formulario*/
+
+.tag,.sub{
+  margin-left: 30px;
+}
+
+.tag2{
+  padding: 5px;
+  margin-top: 10px;
+  margin-left: 30px;
+  
 }
